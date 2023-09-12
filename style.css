@@ -1,0 +1,89 @@
+/*universial selector  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* styling for the body */
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* style for the container which contains all the ui */
+.container{
+    width: 37%;
+    height: 400px;
+    border: 3px solid #3967cb;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.container .incont{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+    align-items: center;
+}
+/* style for the h2 element */
+.container h2{
+    font-size: 30px;
+    margin: 10px ;
+    display: inline;
+    color: #3967cb;
+    text-align: left;
+}
+/* style for the image */
+.container img{
+    width: 20%;
+    height: 20%;
+    display: inline;
+    margin: 10px;
+
+}
+/* style for the input  */
+input{
+    width: 80%;
+    height: 30px;
+    border: 2px solid #3967cb;
+    padding: 10px ;
+    font-size: 80%;
+    color: #3967cb;
+    border-radius: 15px;
+}
+/* style for the button */
+button{ 
+    padding: 10px;
+    font-size: 20px;
+    color: #3967cb;
+    border: 2px solid #3967cb;
+    background-color: #f5f5f2;
+    border-radius: 15px;
+    cursor: pointer;
+}
+/* adding hover effect to the button */
+button:hover{
+    color: #f4f4f4;
+    background-color: #3967cb;
+}
+/* Responsive style  */
+@media screen and (max-width:930px) {
+        .container .incont{
+            flex-direction: column;
+        }
+        .container h2{
+            font-size: 25px;
+        }
+}
+@media screen  and (max-width:730px){
+    .container{
+        width: 65%;
+    }
+}
